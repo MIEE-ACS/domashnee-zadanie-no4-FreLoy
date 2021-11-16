@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz4", "dz4\dz4.csproj", "{81A1B1B3-3103-4178-A5D2-4D81D0D5C52E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ4.1", "DZ4.1\DZ4.1.csproj", "{1219AC41-8EB0-4063-8FED-1824ADB15952}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81A1B1B3-3103-4178-A5D2-4D81D0D5C52E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A1B1B3-3103-4178-A5D2-4D81D0D5C52E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81A1B1B3-3103-4178-A5D2-4D81D0D5C52E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81A1B1B3-3103-4178-A5D2-4D81D0D5C52E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1219AC41-8EB0-4063-8FED-1824ADB15952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1219AC41-8EB0-4063-8FED-1824ADB15952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1219AC41-8EB0-4063-8FED-1824ADB15952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1219AC41-8EB0-4063-8FED-1824ADB15952}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0826B9C-4DB3-481A-BD9F-7AF59FF6F091}
+	EndGlobalSection
+EndGlobal
