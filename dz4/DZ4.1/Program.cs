@@ -10,6 +10,11 @@ namespace DZ4._1
 
             Console.WriteLine("Введите размер матрицы: N =");
             int N = int.Parse(Console.ReadLine());
+            while (!(N > 0))
+            {
+                Console.Write("ОШИБКАШИБКАОШИБКА\nВведите верное значение\n");
+                    N = int.Parse(Console.ReadLine());                
+            }            
             mat = new int[N, N];
             Random rand = new Random();
 
@@ -35,21 +40,22 @@ namespace DZ4._1
             int[] RowTotal = new int[N];
             for (int i = 0; i < N; i++)
             {
-                for (int j = 0; j < N; j++)
+                long p = 1L;
+                int j;
+                for (j = 0; j < N; j++)
                 {
-                    if (mat[i, j] > 0)
-                    {
-                        if (!RowTotal[i].Equals(0))
-                            RowTotal[i] *= mat[i, j];
-                        else RowTotal[i] = mat[i, j];
-
-                    }
+                    if (mat[i, j] < 0) break;
+                    p *= mat[i, j];
                 }
-
+                if (j == N)
+                {
+                    Console.WriteLine("Произведение строки {0}: {1}", i, p);
+                }
+                else
+                {
+                    Console.WriteLine("Строка {0} имеет отрицательное число!", i);
+                }
             }
-            for (int i = 0; i < N; i++)
-                Console.WriteLine("Строка  {0} матрицы имеет произведение положительных элементов равное: {1}", i + 1, RowTotal[i]);
-            Console.ReadKey(true);
 
             int[] SUS = new int[2*N-1];
             int chetchik = 0;
